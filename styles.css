@@ -1,0 +1,85 @@
+/* Estilo padrão (base) */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --button-bg-color: #333;
+    --button-text-color: #fff;
+    --button-hover-bg-color: #555;
+    --button-active-bg-color: #444;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: opacity 0.3s;
+}
+
+/* Botão interativo */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-hover-bg-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    background-color: var(--button-active-bg-color);
+    transform: scale(0.95); /* Efeito de clique */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Tema Feiticeira Escarlate */
+.scarlet-witch-theme {
+    --background-color: #8B0000;
+    --text-color: #FFDDDD;
+    --button-bg-color: #550000;
+    --button-hover-bg-color: #770000;
+    --button-active-bg-color: #660000;
+}
+
+/* Tema Wiccano */
+.wiccan-theme {
+    --background-color: #1E90FF;
+    --text-color: #E6E6FA;
+    --button-bg-color: #0055AA;
+    --button-hover-bg-color: #0077CC;
+    --button-active-bg-color: #0066BB;
+}
+
+/* Tema Agatha Harkness */
+.agatha-harkness-theme {
+    --background-color: #4B0082;
+    --text-color: #D8BFD8;
+    --button-bg-color: #300055;
+    --button-hover-bg-color: #500077;
+    --button-active-bg-color: #400066;
+}
